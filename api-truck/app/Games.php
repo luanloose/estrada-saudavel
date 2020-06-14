@@ -16,4 +16,9 @@ class Seller extends Model
     {
     	return $this->belongsTo(User::class);
     }
+
+    public function challenge()
+    {
+    	return $this->hasMany(Challenges::class);
+    }
 }
