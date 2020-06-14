@@ -36,3 +36,19 @@ $router->group(['prefix' => 'health'], function() use($router){
     $router->delete('/{user}', 'HealthController@destroy');
 
 });
+
+$router->group(['prefix' => 'games'], function() use($router){
+
+    $router->post('/','GamesController@store');
+    $router->put('/{user}', 'GamesController@update');
+    $router->delete('/{user}', 'GamesController@destroy');
+    $router->get('/', 'UserController@show');
+
+
+});
+
+$router->group(['prefix' => 'challenges'], function() use($router){
+
+    $router->post('/','ChallengesController@store');
+    $router->put('/', 'ChallengesController@fisish');
+});
