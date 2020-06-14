@@ -33,7 +33,6 @@ class UserController extends Controller
             $user = $this->user->with(['health', 'game'])
                 ->where('name', 'like', "%{$user}%")->get();
 
-
             if ($user) {
                 return response()->json(
                     ['Usuario' => $user],
@@ -56,7 +55,6 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            
             'name' => 'required', 
             'email' => 'required', 
             'cpf' => 'required|unique:users', 
@@ -65,14 +63,13 @@ class UserController extends Controller
             'truck_plate' => 'required', 
             'cnpj' => 'required', 
             'points' => 'required'
-
         ]);
 
         $data = $request->all();
 
         try {
 
-            $user = $this->user->create($data['user']);
+            $this->user->create($data['user']);
 
             return response()->json(
                 Msg::getSucess("Usuário cadastrado com sucesso!"),

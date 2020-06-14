@@ -9,7 +9,7 @@ class Seller extends Model
     protected $table = 'health';
 
     protected $fillable = [
-        'height', 'weight', 'is_smoker', 'has_diabetes', 'has_hypertension',
+        'height', 'weight', 'is_smoker', 'has_diabetes', 'has_hypertension'
     ];
 
     public function user()

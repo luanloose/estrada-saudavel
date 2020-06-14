@@ -20,3 +20,19 @@ $router->group(['prefix' => 'usuarios'], function() use($router){
     $router->delete('/{user}', 'UserController@destroy');
 
 });
+
+$router->group(['prefix' => 'points'], function() use($router){
+
+    $router->post('/deposit/{user}', 'UserController@deposit');
+    $router->post('/withdraw/{user}', 'UserController@withdraw');
+
+});
+
+
+$router->group(['prefix' => 'health'], function() use($router){
+
+    $router->post('/','HealthController@store');
+    $router->put('/{user}', 'HealthController@update');
+    $router->delete('/{user}', 'HealthController@destroy');
+
+});
