@@ -1,0 +1,51 @@
+<div class="container-steps">
+	<ng-container *ngIf="step === 1">
+		<img src="assets/icon-guia-1.svg"/>
+		<div class="dots">
+			<div class="dot red"></div>
+			<div class="dot gray"></div>
+			<div class="dot gray"></div>
+		</div>
+		<div class="title">
+			Conclua objetivos durante uma viagem
+		</div>
+		<div class="description">
+			Sincronizadas com rotas no Waze e no Google Maps, você pode cumprir objetivos propostos durante a sua viagem.
+		</div>
+		<button class="button-next-step" (click)="next()">Próximo</button>
+		<div class="jump" routerLink="app">Pular</div>
+	</ng-container>
+
+	<ng-container *ngIf="step === 2">
+		<img src="assets/icon-guia-2.svg"/>
+		<div class="dots">
+			<div class="dot gray"></div>
+			<div class="dot red"></div>
+			<div class="dot gray"></div>
+		</div>
+		<div class="title">
+			Ganhe pontos a cada objetivo concluido
+		</div>
+		<div class="description">
+			A cada objetivo concluido você ganha pontos que geram benefícios para você, como descontos em combustíveis, pedágios e estabelecimento parceiros.
+		</div>
+		<button class="button-next-step" (click)="next()">Próximo</button>
+		<div class="jump" routerLink="app">Pular</div>
+	</ng-container>
+
+	<ng-container *ngIf="step === 3">
+		<img src="assets/icon-guia-3.svg"/>
+		<div class="dots">
+			<div class="dot gray"></div>
+			<div class="dot gray"></div>
+			<div class="dot red"></div>
+		</div>
+		<div class="title">
+			E ainda cuida mais da sua saúde e bem estar.
+		</div>
+		<div class="description">
+			Você cuida da sua saúde, alimentação e do seu sono brincando e ganhando.
+		</div>
+		<button class="button-next-step" routerLink="app/rota">Conheça o aplicativo</button>
+	</ng-container>
+</div>
