@@ -1,0 +1,126 @@
+.container-profile {
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    position: relative;
+
+    img {
+        width: 60px;
+        height: 60px;
+        z-index: 99;
+    }
+
+    .title {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+
+    .dots {
+        margin-top: 10px;
+        width: 28px;
+        height: 7px;
+    }
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    padding: 15px 31px;
+    width: calc(100% - 94px);
+    position: absolute;
+    top: 62px;
+    display: flex;
+    align-items: center;
+
+    .text {
+        font-size: 10px;
+        line-height: 10px;
+        color: #969696;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .goals {
+        font-weight: 300;
+        font-size: 28px;
+        color: #414040;
+        text-align: center;
+    }
+
+    .points {
+        font-weight: bold;
+        font-size: 23px;
+        color: #CB2D3E;
+        width: 130px
+    }
+
+    .line {
+        background-color: #F9F9F9;
+        width: 1px;
+        margin: 0 13px;
+    }
+}
+
+.container-points {
+    background: rgba(231, 231, 231, 0.989);
+    padding: 75px 16px;
+
+    .text {
+        font-size: 10px;
+        color: #2F2E2E;
+    }
+
+    .box {
+        padding: 16px 8px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        color: #494949;
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        
+        .info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+
+            .title {
+                margin-left: 10px;
+                font-size: 13px;
+                margin-bottom: 5px;
+            }
+    
+            .description {
+                font-weight: bold;
+                font-size: 10px;
+                margin-left: 10px;
+
+                &:disabled {
+                    color: #CB2D3E;
+                    opacity: 1;
+                }
+            }
+        }
+        img {
+            border-radius: 10px;
+            width: 52px;
+            height: 52px;
+        }
+        .disccount {
+            font-size: 14px;
+
+        }
+    }
+    .disabled {
+        opacity: 0.3;
+    }
+}
