@@ -10,4 +10,4 @@ Integrantes do grupo:
 
 * Front-end: [Nicole Rizzi](https://www.linkedin.com/in/nicole-rizzi-nunes-11116b12b/)
 
-Projeto: [Video Demonstrativo](https://www.youtube.com/watch?v=ueQgfItuecU&feature=youtu.be)
+Projeto: [Video Demonstrativo](https://youtu.be/ueQgfItuecU)
