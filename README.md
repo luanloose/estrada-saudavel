@@ -10,4 +10,8 @@ Integrantes do grupo:
 
 * Front-end: [Nicole Rizzi](https://www.linkedin.com/in/nicole-rizzi-nunes-11116b12b/)
 
-Projeto: [Video Demonstrativo](https://youtu.be/ueQgfItuecU)
+[Video Demonstrativo do Projeto](https://youtu.be/ueQgfItuecU)
+
+Canvas do Projeto:
+
+![Canvas](CanvasHackathonCCR.jpg)
